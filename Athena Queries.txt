@@ -1,0 +1,11 @@
+__Athena Portion__
+
+--Query to test dataset
+SELECT * 
+FROM "AWSDataCatalog"."data-engineering-clean-data"."cleaned_statistics_reference_data"
+
+--Query to select title, category id, and snippet title of category columns from raw data and join "id category" where region is canada from clean data table
+SELECT a.title, a.category_id, b.snippet_title
+FROM "data-engineering-raw-data"."raw_statistics" a
+INNER JOIN "data-engineering-clean-data"."cleaned_statistics_reference_data" b ON a.category_id=b.id
+WHERE a.region = 'ca';
