@@ -13,6 +13,7 @@ Dataset collected using Youtube API
 - S3
 - IAM
 - CLI
+- Lambda
 
 # Things that I learned
 - Root Account Best Practices
@@ -22,12 +23,14 @@ Dataset collected using Youtube API
     - Rotate passwords and keys periodically
     - Avoid credentails file in shared or private computers
     - Follow least privilege principle always
-- Create users using IAM
+- AWS layers & policies
+- Create users and roles using IAM
 - Creating S3 bucket and uploading data
 - Data Catalog
 - How to build a Data Lake from scratch with Amazon S3
     - Joining structured and semi structured data
-- ETL in AWS Glue
+- Created Glue Crawlers in AWS Glue
+- ETL in Glue and Lambda
 - SQL queries with Amazon Athena
 
 # Goals and Success Criteria
